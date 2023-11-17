@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* width: 1200px; */
+    /* height: 600px; */
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.join{
+    width: 1000px;
+    height: 800px;
+    margin: 100px;
+    border: 3px solid red;
+}
+.join fieldset{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.join>div:nth-child(1){
+    /* 상하 3분할 상단(노스페이스 회원가입) */
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.join>div:nth-child(2){
+    /* 상하 3분할 가운데(약관동의+필수입력정보) */
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+.join>div:nth-child(2)>fieldset:nth-child(1){
+    /* 약관동의 */
+    width: 50%;
+}
+.join>div:nth-child(2)>fieldset:nth-child(2){
+    /* 필수입력정보 */
+    width: 50%;
+}
+
+.join>div:nth-child(3){
+    /* 상하 3분할 하단(회원가입 버튼) */
+    height: 20%;
+    display: flex;
+}
+
+.join>button{
+    height: 10%;
+}
+
+.join>:nth-child(2)>label::after{
+    content: "*";
+    color: red;
+}
+
+.join >h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+.join >p{
+    font-size: 8px;
+    color: red;
+}

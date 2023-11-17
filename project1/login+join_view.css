@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* width: 1200px; */
+    /* height: 600px; */
+    margin: 0px;
+}
+.login_join a{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.login_join{
+    /* 로그인 + 회원가입 전체  */
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    
+    margin: 50px;
+    
+    border: 3px solid red;
+}
+.login_join>fieldset:nth-child(1){
+    /* 왼쪽 로그인 부분 */
+    flex-basis: 50%;
+    
+    border: 2px solid yellow;
+    width: 400px;
+    padding: 5%;
+}
+.login_join>fieldset:nth-child(2){
+    /* 오른쪽 회원가입 부분 */
+    flex-basis: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;
+    width: 400px;
+    padding: 5%;
+}
+.login_join h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+}
+.login_join>fieldset:nth-child(2) div{
+    background-color: lightgray;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 5%;
+}
+
+.login_join>fieldset:nth-child(2) div>p{
+    font-size: 13px;
+    padding: 20px;
+}
+.login_join>fieldset:nth-child(2) ul{
+    /* 회원가입 ul */
+    
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.login_join>fieldset:nth-child(2) li{
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.login_join button{
+    /* 로그인, 회원가입 버튼 */
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#benefit{
+    /* 혜택 더보기 버튼 */
+    background-color: white;
+    color: black;
+}
+.login_join input{
+    /* 아이디 비번 입력input창 */
+    width: 100%;
+    height: 50px;
+    margin-top: 2%;
+}
+
+#userSaveStil{
+    /* 로그인 상태유지 ckeck박스 */
+    width: 20px;
+    height: 20px;
+    margin-top: 3%;
+}
+
