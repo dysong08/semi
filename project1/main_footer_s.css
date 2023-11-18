@@ -1,17 +1,19 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     /* width: 1200px; */
     /* height: 600px; */
     margin: 0px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
 
-footer>fieldset{
+footer>fieldset {
     background-color: black;
     color: white;
     text-align: center;
@@ -19,38 +21,48 @@ footer>fieldset{
 }
 
 
-footer section:nth-child(1){
+footer section:nth-child(1) {
     margin: 25px;
     font-size: 20px;
     font-weight: bold;
     /* line-height: 50px; */
 }
-footer section:nth-child(2){
+
+footer section:nth-child(2) {
     opacity: 0.5;
     line-height: 25px;
-    
-}
-footer section:nth-child(3){
-    color: white;
-    padding:  25px;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-footer section:nth-child(4){
-    opacity: 0.5;
-    text-align: left;
-    padding-left: 40%;
 
 }
-footer section:nth-child(5){
+
+footer section:nth-child(3) {
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+footer section:nth-child(4) {
+    opacity: 0.5;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-info>img {
+    width: 150px;
+}
+
+
+footer section:nth-child(5) {
     font-size: 20px;
     font-weight: bold;
     margin: 25px;
 }
-footer section:nth-child(6){
+
+footer section:nth-child(6) {
     opacity: 0.5;
 }
-
-
-
