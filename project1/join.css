@@ -1,69 +1,235 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     /* width: 1200px; */
     /* height: 600px; */
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.join{
-    width: 1000px;
-    height: 800px;
+
+.join {
+    width: 1300px;
     margin: 100px;
-    border: 3px solid red;
+
+
 }
-.join fieldset{
-    padding-left: 3%;
-    padding-right: 3%;
+
+.join fieldset {
+    border: none;
+    /* padding: 30px; */
+    padding: 50px;
 }
-.join>div:nth-child(1){
+
+.block1 {
     /* 상하 3분할 상단(노스페이스 회원가입) */
     width: 100%;
-    height: 20%;
+    height: 15%;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-size: 30px;
     font-weight: bold;
+
+    margin-bottom: 50px;
 }
-.join>div:nth-child(2){
+
+.block2 {
     /* 상하 3분할 가운데(약관동의+필수입력정보) */
     width: 100%;
     height: 60%;
     display: flex;
 }
-.join>div:nth-child(2)>fieldset:nth-child(1){
+
+.block2-1 {
     /* 약관동의 */
     width: 50%;
 }
-.join>div:nth-child(2)>fieldset:nth-child(2){
+
+.access-all {
+    display: flex;
+
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.access-member-terms {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+
+
+.checkBox-detail {
+    width: 340px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+
+.access-link {
+    display: flex;
+    justify-content: end;
+    width: 60px;
+
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.access-ad {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.access-ad-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.access-ad-content * {
+    margin-bottom: 10px;
+}
+
+.block2-2 {
     /* 필수입력정보 */
     width: 50%;
 }
 
-.join>div:nth-child(3){
+.block3 {
     /* 상하 3분할 하단(회원가입 버튼) */
-    height: 20%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
 }
 
-.join>button{
-    height: 10%;
+.block3>button {
+    width: 400px;
+    height: 60px;
+    background-color: black;
+    color: white;
 }
 
-.join>:nth-child(2)>label::after{
+.info-content>span::after {
     content: "*";
     color: red;
 }
 
-.join >h4{
-    font-size: 20px;
+.access-content-title {
+    font-size: 1rem;
     font-weight: bold;
 }
-.join >p{
-    font-size: 8px;
-    color: red;
+
+.warning-text {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+
+.warning-text>label {
+    background-color: #e9e9e9ee;
+}
+
+.warning-text>label>span {
+    color: #fd6d04;
+}
+
+.add-Info-text {
+    font-size: 0.7rem;
+}
+
+.add-Info-text>span {
+    color: #fd6d04;
+}
+
+.join p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.info-main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.info-content {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-content>span {
+    font-size: 0.9rem;
+    flex-basis: 160px;
+    padding: 5px 0;
+}
+
+.input-content>.info-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-content>div>input {
+    width: 350px;
+    padding: 7px 15px;
+    font-size: 0.9rem;
+    margin-right: 30px;
+}
+
+.info-warning {
+    visibility: hidden;
+    color: red;
+    font-size: 0.8rem;
+    margin: 7px 0;
+}
+
+/* .info-desc {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+    font-size: 0.9rem;
+
+    justify-content: center;
+}
+
+.info-desc>span {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.info-input>input {
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+} */

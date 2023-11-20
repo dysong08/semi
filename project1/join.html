@@ -1,93 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/project1/join.css">
+    <link rel="stylesheet" href="join.css">
 </head>
+
 <body>
-    
+
     <article class="join">
-        
-        <div>노스페이스 회원가입</div>
-        
-        <div>
-            <fieldset>
-                
-                <input type="checkbox" id="joinAgreeAll"><label>모든 약관 동의</label>
-                <h4>
-                    아래 모든 약관(필수), 멤버십 이용약관(필수), 개인정보 수집 및 이용에 대한 동의(필수), 생년월일, 성별 제공에 대한 동의(선택) 및 광고성 정보수신 동의(선택) 내용을 확인하고 전체 동의합니다.
-                </h4>
+
+        <div class="block1">노스페이스 회원가입</div>
+
+        <div class="block2">
+            <fieldset class="block2-1">
+
+                <div class="access-all">
+                    <input type="checkbox" id="joinAgreeAll">
+
+                    <div class="access-content-title">모든 약관 동의</div>
+                </div>
+                <div class="access-content-title">
+                    아래 모든 약관(필수), 멤버십 이용약관(필수), 개인정보 수집 및 이용에 대한 동의(필수), 생년월일, 성별 제공에 대한 동의(선택) 및 광고성 정보수신 동의(선택)
+                    내용을
+                    확인하고 전체 동의합니다.
+                </div>
                 <p>
-                    만 14세 이상에 한하여 노스페이스 온라인몰 이용약관, 개인정보 수집 및 이용동의, 멤버십 이용약관 동의 후 가입 가능하며 선택 항목에 대한 동의를 거부하더라도 온라인몰 회원가입 및 이용이 가능합니다.
+                    만 14세 이상에 한하여 노스페이스 온라인몰 이용약관, 개인정보 수집 및 이용동의, 멤버십 이용약관 동의 후 가입 가능하며 선택 항목에 대한 동의를 거부하더라도 온라인몰
+                    회원가입
+                    및 이용이 가능합니다.
                 </p>
 
-                <h4>
+                <div class="access-content-title">
                     노스페이스 공식 온라인 스토어 회원 약관 및 개인정보 수집 이용에 대한 동의
-                </h4>
-                
-                <input type="checkbox" name="joinAgree" id="joinAgree"><span> (필수) 이용약관에 대한 동의</span>
-                <input type="checkbox" name="joinAgree" id="joinAgree"><span> (필수) 멤버십 이용약관에 대한 동의</span>
-                <input type="checkbox" name="joinAgree" id="joinAgree"><span> (필수) 개인정보 수집 및 이용에 대한 동의</span>
-                <input type="checkbox" name="joinAgree" id="joinAgree"><span> (선택) 생년월일, 성별 제공에 대한 동의</span>
+                </div>
+                <div class="access-member-terms">
+                    <div>
+                        <div class="checkBox-detail">
+                            <input type="checkbox" name="joinAgree" id="joinAgree">
+                            <span> (필수) 이용약관에 대한 동의</span>
+                        </div>
+                        <div class="checkBox-detail">
+                            <input type="checkbox" name="joinAgree" id="joinAgree">
+                            <span> (필수) 멤버십 이용약관에 대한 동의</span>
+                        </div>
+                        <div class="checkBox-detail">
+                            <input type="checkbox" name="joinAgree" id="joinAgree">
+                            <span> (필수) 개인정보 수집 및 이용에 대한 동의</span>
+                        </div>
+                        <div class="checkBox-detail">
+                            <input type="checkbox" name="joinAgree" id="joinAgree">
+                            <span> (선택) 생년월일, 성별 제공에 대한 동의</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="access-link"><a href="#">전문보기</a></div>
+                        <div class="access-link"><a href="#">전문보기</a></div>
+                        <div class="access-link"><a href="#">보기</a></div>
+                        <div class="access-link"><a href="#">보기</a></div>
+                    </div>
+                </div>
+                <div class="add-Info-text warning-text">
+                    <label>선택정보 제공 동의하지 않을 경우
+                        <span>생일쿠폰 등의 멤버십 행사</span>
+                        에서 제외 됩니다.</label>
+                </div>
 
-                <section>
-                    선택정보 제공 동의하지 않을 경우 생일쿠폰 등의 멤버십 행사에서 제외 됩니다.
-                </section>
 
-
-                <h4>광고성 정보 수신 동의</h4>
-                <article>
-                    다양한 이벤트 소식을 받아보세요
+                <div class="access-content-title">광고성 정보 수신 동의</div>
+                <article class="add-Info-text">
+                    <span>다양한 이벤트 소식을 받아보세요</span>
                 </article>
 
-                <input type="checkbox" name="joinChoice" id="join"><span> (선택) 쇼핑정보 E-mail 수신 동의</span>
-                <input type="checkbox" name="joinChoice" id="join"><span> (선택) 쇼핑정보 SMS 수신 동의</span>
+                <div class="access-ad">
+                    <div class="access-ad-content">
+                        <input type="checkbox" name="joinChoice" id="join">
+                        <input type="checkbox" name="joinChoice" id="join">
+                    </div>
+                    <div class="access-ad-content">
+                        <span>(선택) 쇼핑정보 E-mail 수신 동의</span>
+                        <span>(선택) 쇼핑정보 SMS 수신 동의</span>
+                    </div>
+                </div>
             </fieldset>
-
-            <fieldset>
+            <hr style="opacity: 0.3;" />
+            <fieldset class="block2-2">
                 <h4>필수 입력 정보</h4>
                 <p>본인 인증된 이름, 휴대폰번호로 가입됩니다.</p>
+                <div class="info-main">
+                    <div class="info-content">
+                        <span>아이디</span>
+                        <div class="info-input">
+                            <input type="text" id="userId" placeholder="아이디를 입력해주세요.(특수문자 입력 불가)">
+                            <div class="info-warning userId">영문, 숫자를 포함한 4~15자리로 입력해 주세요.</div>
+                        </div>
+                    </div>
 
-                <label>아이디</label>
-                <input type="text" name="" id="" placeholder="아이디를 입력해주세요.(특수문자 입력 불가)">
-                <label>비밀번호</label>
-                <input type="password" name="" id="" placeholder="영문/숫자/특수문자 조합 8-16자">
-                <label>비밀번호 확인</label>
-                <input type="password" name="" id="" placeholder="비밀번호 입력 확인">
-                <label>이메일</label>
-                <input type="email" name="" id="" placeholder="이메일을 입력해주세요(abc@naver.com)">
-                <label>이름</label>
-                <input type="text" name="" id="" >
-                <label>휴대폰</label>
-                <input type="number" name="" id="">
-                <label>생년월일</label>
-                <input type="number" name="" id="">
-                <article>생년월일, 성별 제공에 동의하지 않을 경우 저장되지 않습니다.</article>
+                    <div class="info-content">
+                        <span>비밀번호</span>
+                        <div class="info-input">
+                            <input type="password" id="userPwd" placeholder="영문/숫자/특수문자 조합 8-16자">
+                            <div class="info-warning userPwd">영문/숫자/특수문자 조합 8-16자로 입력해 주세요.</div>
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <span>비밀번호 확인</span>
+                        <div class="info-input">
+                            <input type="password" id="pwdChecked" placeholder="비밀번호 입력 확인">
+                            <div class="info-warning pwdChecked">비밀번호가 일치하지 않습니다.</div>
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <span>이메일</span>
+                        <div class="info-input">
+                            <input type="email" id="email" placeholder="이메일을 입력해주세요(abc@naver.com)">
+                            <div class="info-warning email">email</div>
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <span>이름</span>
+                        <div class="info-input">
+                            <input type="text" id="userName">
+                            <div class="info-warning">name</div>
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <span>휴대폰</span>
+                        <div class="info-input">
+                            <input type="number" id="userPhone" placeholder="(-)제외 숫자만 입력해주세요" maxlength="11">
+                            <div class="info-warning">phone</div>
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <span>생년월일</span>
+                        <div class="info-input">
+                            <input type="date" id="userBirth">
+                            <div class="info-warning">birth</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <article
+                    style="color: #fd6d04; font-size: 0.8rem; margin-right: 40px;  display: flex; justify-content: end;">
+                    생년월일, 성별 제공에
+                    동의하지 않을 경우 저장되지
+                    않습니다.</article>
             </fieldset>
         </div>
-        <div>
-            <button onclick="joinOk()">회원가입</button>
+        <div class="block3">
+            <button onclick="register()">회원가입</button>
         </div>
     </article>
 
 
+    <script defer>
+
+        const userIdRegExp = /^[a-zA-Z0-9]{4,15}$/;
+        const userPwdRegExp = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,16}$/;
+        const emailRegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const nameRegExp = /^[가-힣]+$/;
+        const phoneRegExp = /^01[0-9]{9}$/;
+
+        //id input 체크 값 ..
+        const idVal = document.getElementById("userId");
+        //id 조건 불일치 시 보여주기 위해..
+        const idWarningText = document.querySelector(".userId");
+
+        idVal.addEventListener('input', (e) => {
+            if (e.target.value == "" || userIdRegExp.test(e.target.value)) {
+                // id 정규식 통과 -> 경고문구 사라짐
+                idWarningText.style.visibility = 'hidden';
+            }
+            else {
+                // 정규식 통과 경고문구 안사라짐
+                idWarningText.style.visibility = 'visible';
+            }
+        });
+
+        //pwd input 체크 값..
+        const pwdVal = document.getElementById("userPwd");
+        //pwd 조건 불일치 시 보여줄 값..
+        const pwdWarningText = document.querySelector(".userPwd");
+
+        pwdVal.addEventListener('input', (e) => {
+            if (userPwdRegExp.test(e.target.value)) {
+                //정규표현식 통과 -> 보여주던 경고문구를 사라지게 할 예정.
+                pwdWarningText.style.visibility = 'hidden';
+            }
+            else {
+                //정규표현식 통과 XX -> 경고문구 보여줄 예정
+                pwdWarningText.style.visibility = 'visible';
+            }
+        })
+
+        const emailVal = document.getElementById("email");
+        const nameVal = document.getElementById("userName");
+        const phoneVal = document.getElementById("userPhone");
+        const birthVal = document.getElementById("userBirth")
+
+        // pwd와 pwdChecked 일치여부 확인하여 경고문구 노출
+        // pwdChecked의 값을 pwdCheckedVaL 변수에 담음
+
+
+        // pwd와 pwdChecked 불일치하면 보여줄 문구
+        const pwdCheckedVaL = document.getElementById("pwdChecked");
+        const pwdCheckedWarningText = document.querySelector(".pwdChecked")
+
+        pwdCheckedVaL.addEventListener('input', () => {
+            if (pwdVal.value == pwdCheckedVaL.value) {
+                //정규표현식 통과 -> 보여주던 경고문구를 사라지게 할 예정.
+                pwdCheckedWarningText.style.visibility = 'hidden';
+            }
+            else {
+                //정규표현식 통과 XX -> 경고문구 보여줄 예정
+                pwdCheckedWarningText.style.visibility = 'visible';
+            }
+        })
 
 
 
+        const register = () => {
+            console.log("회원가입 버튼 눌림..");
+            // 아이디가 없거나 잘못 입력
+            if (!idVal.value || !userIdRegExp.test(idVal.value)) {
+                alert("올바른 아이디를 입력해주세요.");
+                return;
+            }
+
+            // 비밀번호가 없거나 잘못 입력
+            if (!pwdVal.value || !userPwdRegExp.test(pwdVal.value)) {
+                alert("올바른 비밀번호를 입력해주세요.");
+                return;
+            }
+            // pwd와 pwdChecked 불일치시
+            if (pwdVal.value != pwdCheckedVaL.value) {
+                alert("비밀번호가 일치하지 않습니다.")
+                return;
+            }
+
+            // 이메일 없거나 잘못입력
+            if (!email.value || !emailRegExp.test(email.value)) {
+                alert("올바른 이메일을 입력해주세요.");
+                return;
+            }
+            // 이름이 없거나
+            if (!userName.value || !nameRegExp.test(userName.value)) {
+                alert("이름을 입력해주세요.")
+                return;
+            }
+
+            // 휴대폰 없거나 잘못입력
+            if (!userPhone.value || !phoneRegExp.test(userPhone.value)) {
+                alert("(-)제외 숫자만 입력해주세요.")
+                return;
+            }
+            // 생년월일 없거나
+            if (!userBirth.value) {
+                alert("생년월일을 입력해주세요.")
+                return;
+            }
 
 
 
+            //..비밀번호.. 이메일.. 이름.. 등등 객체 추가
+            const user = {
+                id: idVal.value,
+                pwd: pwdVal.value,
+                email: emailVal.value,
+                name: nameVal.value,
+                phone: phoneVal.value,
+                birth: birthVal.value,
+            }
+            localStorage.setItem(idVal.value, JSON.stringify(user));
+            alert(nameVal.value + "님! 가입을 축하드립니다!");
+            location.replace("whole.html");
 
+            // DB가 없으니까 잠시 로컬에 담아서 사용할 것인데,
+            // 넣어준 이후에는 기존 데이터를 날려서 사용자에게 새로고침 현상과 같은
+            // 시각 효과를 주는 것이 중요하다.
+            // idVal.value = "";
+            // pwdVal.value = "";
 
+        }
 
+    </script>
 
-
-
-
-
-
-    
 </body>
+
 </html>

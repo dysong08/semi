@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    1. 회원가입창에서 모두선택 가능하게끔... 가능하면 전문보기에 모달창도
+    2. localStorige에서 가져와서 로그인 
+    3. 메인메뉴바 하위메뉴바 display
+    4. 장바구니 alert
+    5. 메인img 위치정렬 / 첫번째 img에 < 화면전환 > 
+    6. 아이콘 넣기
+    7. 
+
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="whole.css">
+
+</head>
+
+
+<script>
+
+    $(".navbar").hover(function () {
+        $(this).css('background-color', 'red');
+        $(".women_sub_menu").css('display', 'block');
+        // $(".men_sub_menu").css('display', 'block');
+
+
+    })
+
+</script>
+
+<body>
+    <header>
+        <div class="nf-logo">
+            <img src="img/logo.png" alt="nf-logo" onclick="location.href = location.href">
+        </div>
+
+        <div class="top-bar">
+            <div>
+                <ul>
+                    <li class="navbar women">
+                        <span>여성</span>
+                        <!-- <div > -->
+                        <ul class="women_sub_menu">
+                            <li class="">다운&패딩
+                                <ul class="women_sub_item">
+                                    <li>롱다운&파카</li>
+                                    <li>다운&패딩자켓</li>
+                                    <li>다운&패딩조끼</li>
+                                </ul>
+                            </li>
+                            <li class="women_sub_menu">자켓&조끼
+                                <ul class="sub_item">
+                                    <li>기능성자켓</li>
+                                    <li>아노락</li>
+                                    <li>조끼</li>
+                                    <li>플리스자켓</li>
+                                </ul>
+                            </li>
+                            <li class="women_sub_menu">티&셔츠
+                                <ul class="sub_item">
+                                    <li>티셔츠</li>
+                                    <li>맨투맨&후디</li>
+                                    <li>집티&셔츠</li>
+                                </ul>
+                            </li>
+                            <li class="women_sub_menu">바지
+                                <ul class="sub_item">
+                                    <li>팬츠&스커트</li>
+                                    <li>트레이닝&조거팬츠</li>
+                                    <li>레깅스</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                    </li>
+
+
+
+                    <li class="navbar men">
+                        <span>남성</span>
+                        <!-- <div > -->
+                        <ul class="men_sub_menu">
+                            <li class="">다운&패딩
+                                <ul class="men_sub_item">
+                                    <li>롱다운&파카</li>
+                                    <li>다운&패딩자켓</li>
+                                    <li>다운&패딩조끼</li>
+                                </ul>
+                            </li>
+                            <li class="men_sub_menu">자켓&조끼
+                                <ul class="men_sub_item">
+                                    <li>기능성자켓</li>
+                                    <li>아노락</li>
+                                    <li>조끼</li>
+                                    <li>플리스자켓</li>
+                                </ul>
+                            </li>
+                            <li class="men_sub_menu">티&셔츠
+                                <ul class="men_sub_item">
+                                    <li>티셔츠</li>
+                                    <li>맨투맨&후디</li>
+                                    <li>집티&셔츠</li>
+                                </ul>
+                            </li>
+                            <li class="men_sub_menu">바지
+                                <ul class="men_sub_item">
+                                    <li>팬츠&스커트</li>
+                                    <li>트레이닝&조거팬츠</li>
+                                    <li>레깅스</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                    </li>
+                    <li class="navbar">
+                        <span>랭킹</span>
+                    </li>
+                    <li class="navbar">
+                        <span>신상</span>
+                    </li>
+                </ul>
+            </div>
+
+            <section>
+                <button class="navbar-btn" onclick="location.href='login+join_view.html'">로그인</button>
+                <button class="navbar-btn">회원가입</a></button>
+                <button class="navbar-btn">장바구니</button>
+                <input type="search" id="searchAll" placeholder="SEARCH">
+                <button type="button" id="searchBtn">검색</button>
+            </section>
+
+
+            <!-- <div class="dropdown_bar">
+                <ul class="drop_ul">
+                    <li class="sub_item">다운&패딩
+                        <ul class="sub_menu">
+                            <li>롱다운&파카</li>
+                            <li>다운&패딩자켓</li>
+                            <li>다운&패딩조끼</li>
+                        </ul>
+                    </li>
+                    <li class="sub_item">자켓&조끼
+                        <ul class="sub_menu">
+                            <li>기능성자켓</li>
+                            <li>아노락</li>
+                            <li>조끼</li>
+                            <li>플리스자켓</li>
+                        </ul>
+                    </li>
+                    <li class="sub_item">티&셔츠
+                        <ul class="sub_menu">
+                            <li>티셔츠</li>
+                            <li>맨투맨&후디</li>
+                            <li>집티&셔츠</li>
+                        </ul>
+                    </li>
+                    <li class="sub_item">바지
+                        <ul class="sub_menu">
+                            <li>팬츠&스커트</li>
+                            <li>트레이닝&조거팬츠</li>
+                            <li>레깅스</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <main class="imgAll">
+        <div class="main_big1">
+            <img src="img/main_img1.png" alt="main_1">
+        </div>
+
+        <div class="main_big2">
+            <div class="main_1left">
+                <img src="img/2_left_img.png" alt="2_left">
+            </div>
+            <div class="main_1right">
+                <video autoplay="autoplay" loop="loop" muted="muted" controls="" webkit-playsinline="webkit-playsinline"
+                    playsinline="playsinline" id="mvid">
+                    <source src="https://image.thenorthfacekorea.co.kr/NORTHFACE_15S_MASTER.mp4">
+                </video>
+                <div class="main_1right-2">
+                    <img src="img/2_right3_img.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main_big3">
+            <img src="img/3_1img.png" alt="3-1img">
+            <img src="img/3_2img.png" alt="3-2img">
+            <img src="img/3_3img.png" alt="3-3img">
+        </div>
+    </main>
+
+    <!-- 쿠폰(블랙창) height :40px -->
+
+    <footer>
+        <div>
+            <!-- fieldset 1번째 -->
+            <fieldset>
+                <!-- section 자식 1 -->
+                <section>
+                    <span>(주)영원아웃도어</span>
+                    <span>|</span>
+                    <span>대표이사 성기학 </span>
+                    <span>|</span>
+                    <span>[개인정보 보호책임자] 최윤정 상무</span>
+                    <span>|</span>
+                    <span>사업자등록번호 110-81-27101</span>
+                </section>
+
+                <!-- section 자식 2 -->
+                <section>
+                    <span>|</span>
+                    <span>통신판매업 신고번호: 2013-경기성남-0984</span>
+                    <span>|</span>
+                    <a href="">사업자정보확인</a>
+                </section>
+
+                <!-- section 자식 3 -->
+                <section>
+                    <div>주소 : 경기도 성남시 중원구 광명로 293(금광동)</div>
+                    <span>|</span>
+                    <span>반송지 주소 : 경기도 이천시 마장면 프리미엄 아울렛로 33-20</span>
+                </section>
+
+                <!-- section 자식 4 -->
+                <section>
+                    <span>온라인몰 고객지원실 : 1661-3512</span>
+                    <span>|</span>
+                    <span>매장고객 및 A/S문의 : 1899-2626</span>
+                </section>
+
+                <!-- section 자식 5 -->
+                <section>
+                    <div>Youngone Outdoor Co. All Rights Reserved.</div>
+                </section>
+            </fieldset>
+
+            <!-- fieldset 2번째 -->
+            <fieldset>
+                <pre></pre>
+                <img src="/img/INIPAY.PNG" alt="INIPAY" onclick="inipay()">
+            </fieldset>
+
+            <!-- fieldset 3번째 -->
+            <fieldset>
+                <section>
+                    <p>(주)이니시스의 에스크로 서비스 가입
+                        저희 쇼핑몰은 고객님의 안전한 거래를 위해 실시간 계좌이체 거래에 대해
+                        구매안전서비스를 적용하고 있습니다.</p>
+                    <a>에스크로 서비스 가입 확인</a>
+                </section>
+            </fieldset>
+
+            <!-- fieldset 4번째 -->
+            <fieldset>
+                <img src="/img/ISMS.PNG" alt="ISMS" onclick="isms()">
+            </fieldset>
+
+            <!-- fieldset 5번째 -->
+            <fieldset>
+                <section>
+                    <p>[인증범위] 온라인쇼핑몰</p>
+                    <div>(노스페이스, 영원아웃도어) 및 TNF100 홈페이지</div>
+                    <div>[유효기간] 2022.09.21 ~ 2025.09.20</div>
+                </section>
+            </fieldset>
+
+            <!-- fieldset 6번째 -->
+            <fieldset>
+                <img src="/img/DNV.PNG" alt="DNV" onclick="dnv()">
+            </fieldset>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- 회원가입시 조건일치여부 검사 -->
+    <!-- <script defer>
+
+        const userIdRegExp = /^[a-zA-Z0-9]{4,15}$/;
+        const userPwdRegExp = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$! %*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        const emailRegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const nameRegExp = /^[가-힣]+$/;
+        const phoneRegExp = /^\d{11}$/;
+
+        //id input 체크 값 ..
+        const idVal = document.getElementById("userId");
+        //id 조건 불일치 시 보여주기 위해..
+        const idWarningText = document.querySelector(".userId");
+
+        idVal.addEventListener('input', (e) => {
+            if (e.target.value == "" || userIdRegExp.test(e.target.value)) {
+                // id 정규식 통과 -> 경고문구 사라짐
+                idWarningText.style.visibility = 'hidden';
+            }
+            else {
+                // 정규식 통과 경고문구 안사라짐
+                idWarningText.style.visibility = 'visible';
+            }
+        });
+
+        //pwd input 체크 값..
+        const pwdVal = document.getElementById("userPwd");
+        //pwd 조건 불일치 시 보여줄 값..
+        const pwdWarningText = document.querySelector(".userPwd");
+
+        pwdVal.addEventListener('input', (e) => {
+            if (userPwdRegExp.test(e.target.value)) {
+                //정규표현식 통과 -> 보여주던 경고문구를 사라지게 할 예정.
+                pwdWarningText.style.visibility = 'hidden';
+            }
+            else {
+                //정규표현식 통과 XX -> 경고문구 보여줄 예정
+                pwdWarningText.style.visibility = 'visible';
+            }
+        })
+
+        const emailVal = document.getElementById("email");
+        const nameVal = document.getElementById("userName");
+        const phoneVal = document.getElementById("userPhone");
+        const birthVal = document.getElementById("userBirth")
+
+        // pwd와 pwdChecked 일치여부 확인하여 경고문구 노출
+        // pwdChecked의 값을 pwdCheckedVaL 변수에 담음
+
+
+        // pwd와 pwdChecked 불일치하면 보여줄 문구
+        const pwdCheckedVaL = document.getElementById("pwdChecked");
+        const pwdCheckedWarningText = document.querySelector(".pwdChecked")
+
+        pwdCheckedVaL.addEventListener('input', () => {
+            if (pwdVal.value == pwdCheckedVaL.value) {
+                //정규표현식 통과 -> 보여주던 경고문구를 사라지게 할 예정.
+                pwdCheckedWarningText.style.visibility = 'hidden';
+            }
+            else {
+                //정규표현식 통과 XX -> 경고문구 보여줄 예정
+                pwdCheckedWarningText.style.visibility = 'visible';
+            }
+        })
+
+
+
+        const register = () => {
+            console.log("회원가입 버튼 눌림..");
+            // 아이디가 없거나 잘못 입력
+            if (!idVal.value || !userIdRegExp.test(idVal.value)) {
+                alert("올바른 아이디를 입력해주세요.");
+                return;
+            }
+
+            // 비밀번호가 없거나 잘못 입력
+            if (!pwdVal.value || !userPwdRegExp.test(pwdVal.value)) {
+                alert("올바른 비밀번호를 입력해주세요.");
+                return;
+            }
+            // pwd와 pwdChecked 불일치시
+            if (pwdVal.value != pwdCheckedVaL.value) {
+                alert("비밀번호가 일치하지 않습니다.")
+                return;
+            }
+
+            // 이메일 없거나 잘못입력
+            if (!email.value || !emailRegExp.test(email.value)) {
+                alert("올바른 이메일을 입력해주세요.");
+                return;
+            }
+            // 이름이 없거나
+            if (!userName.value || !nameRegExp.test(userName.value)) {
+                alert("이름을 입력해주세요.")
+                return;
+            }
+
+            // 휴대폰 없거나 잘못입력
+            if (!userPhone.value || !phoneRegExp.test(userPhone.value)) {
+                alert("(-)제외 숫자만 입력해주세요.")
+                return;
+            }
+            // 생년월일 없거나
+            if (!userBirth.value) {
+                alert("생년월일을 입력해주세요.")
+                return;
+            }
+
+
+
+            //..비밀번호.. 이메일.. 이름.. 등등 객체 추가
+            const user = {
+                id: idVal.value,
+                pwd: pwdVal.value,
+                email: emailVal.value,
+                name: nameVal.value,
+                phone: phoneVal.value,
+                birth: birthVal.value,
+            }
+            localStorage.setItem(idVal.value, JSON.stringify(user));
+
+            // DB가 없으니까 잠시 로컬에 담아서 사용할 것인데,
+            // 넣어준 이후에는 기존 데이터를 날려서 사용자에게 새로고침 현상과 같은
+            // 시각 효과를 주는 것이 중요하다.
+            // idVal.value = "";
+            // pwdVal.value = "";
+
+        }
+
+    </script> -->
+</body>
+
+
+
+
+
+<script>
+
+    // $(function () {
+
+    //     // nf-logo 클릭시 맨 상단으로 이동
+    //     // $(".nf-logo").click(function () {
+
+    //     // })
+
+    //     // 상단메뉴바 hover시 sub메뉴바 노출여부
+    //     $(".m_w").on({
+    //         'mouseover': function () {
+    //             $(".qwer").css("display", "block");
+    //         }, 'mouseout': function () {
+    //             $(".qwer").css("display", "none");
+    //         }
+    //     })
+    // })
+
+
+
+</script>
+
+
+
+
+</html>
