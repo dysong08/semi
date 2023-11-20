@@ -3,8 +3,6 @@
 }
 
 body {
-    /* width: 99vw; */
-    /* height: 600px; */
     margin: 0px;
     padding-top: 75px;
 }
@@ -13,93 +11,78 @@ body {
 /* header */
 header {
     display: flex;
-    /* height: 80px; */
+    flex-direction: column;
     margin: 0px;
     border-bottom: 2px solid black;
-    /* position: sticky; */
-
     justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
+    z-index: 999;
 }
 
 header * {
     display: flex;
-    width: 150px;
-    height: 85px;
-    justify-items: center;
-    align-items: center;
     margin: 5px;
 }
 
 /* 로고 */
 .nf-logo {
-
-    flex-basis: 10%;
-    /* justify-content: center; */
+    width: 100px;
     margin: 0;
     padding: 0;
 }
 
-.top-bar {
-    width: 100%- 111px;
-    flex-grow: 1;
+.nf-logo>img {
+    width: 100px;
+    flex-grow: 0;
     flex-shrink: 0;
+}
+
+
+
+/* =========== */
+/* top-bar */
+
+.top-bar {
+    width: 100%;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-
 }
 
-.top-bar div {
-    flex-basis: 500px;
+.top-bar>section {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-}
-
-
-.top-bar section {
-    flex-basis: 550px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    /* margin-right: 70px; */
-    flex-shrink: 0;
-    border: 1px solid blue;
-    background-color: red;
+    flex-basis: 600px;
+    flex-shrink: 1;
     cursor: pointer;
-
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    background-color: blue;
-
+    align-items: center;
+    margin-left: 50px;
+    text-decoration: none;
+    width: 60px;
+    color: black;
 }
 
+/* 여성 버튼 댔을때. */
+.women>span:hover~.women_sub_menu {
+    cursor: pointer;
+    display: block;
+}
 
-.navbar>span {
-    width: 100px;
-    /* flex-basis: 80px; */
-    font-size: 20px;
-    font-weight: bold;
-    flex-shrink: 0;
-    border: 1px solid red;
-    /* position: relative; */
+.men>span:hover~.men_sub_menu {
+    display: block;
 }
 
 .navbar-btn {
     display: flex;
     flex-direction: row;
-    flex-basis: 80px;
+    flex-basis: 100px;
     flex-shrink: 0;
     justify-content: center;
     border: 0;
@@ -111,7 +94,7 @@ header * {
 #searchAll {
     /* SERACH input창 */
     margin: 0 10px;
-    width: 180px;
+    flex-basis: 180px;
     height: 30px;
     display: flex;
     justify-items: center;
@@ -123,16 +106,18 @@ header * {
     background-color: rgb(241, 195, 195);
     border: 0;
     border-radius: 20px;
-    width: 50px;
+    flex-basis: 50px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: brown;
+    flex-shrink: 0;
 }
 
 header>input[type=button] {
     /* 검색 버튼 */
+    flex-basis: 50px;
     width: 50px;
     height: 30px;
     display: flex;
@@ -140,64 +125,78 @@ header>input[type=button] {
     margin-top: 28px;
     margin-left: -5px;
     cursor: pointer;
+    flex-shrink: 1;
 }
 
-.main_1 {
-    width: 100px;
-    height: 100px;
-}
-
-
-/* =========== */
-/* top-bar */
-
-.top-bar>div {
+.top-bar>ul {
     display: flex;
     flex-direction: row;
 }
-
-/* .navbar{
-    display: flex;
-    margin: 0;
-} */
-
-/* .top-bar ul {
-    display: flex;
-} */
 
 .top-menu li {
     margin-right: 20px;
     position: relative;
 }
 
-
-.women_sub_menu,
-.men_sub_menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    /* left: 0; */
-    background-color: #555;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 100%;
+.menu {
+    margin: 0;
 }
 
-.women_sub_item li {
-    padding: 10px;
-}
-
-/* .top-bar .women>span:hover .women_sub_menu {
-    cursor: pointer;
-    background-color: red;
-    display: block;
-
-} */
-
-.women,
-.men {
+#men-menu {
+    margin: 5px;
     display: flex;
     flex-direction: column;
+    padding-left: 165px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+#women-menu {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 165px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.menu-main {
+    margin: 0;
+}
+
+.menu-title {
+    height: 20px;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.menu-title>a {
+    width: 150px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 0;
+}
+
+.menu-item>a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.menu-item>a:hover {
+    color: #b36262;
 }
 
 
@@ -208,13 +207,23 @@ header>input[type=button] {
     display: flex;
     flex-direction: column;
     margin: 0;
+    justify-content: center;
+}
+
+.main_1 {
+    width: 100px;
+    height: 100px;
 }
 
 .main_big1 {
+    display: flex;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .main_big1>img {
+    width: 100%;
+    height: 800px;
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -223,11 +232,8 @@ header>input[type=button] {
 .main_big2 {
     display: flex;
     flex-direction: row;
-    width: 800px;
     height: 800px;
-    justify-items: center;
-    align-content: center;
-
+    justify-content: center;
 }
 
 .main_big2>.main_1left {
@@ -239,9 +245,19 @@ header>input[type=button] {
     flex-direction: column;
 }
 
-
 .main_big2>.main_1right>video {
     height: 50%;
+}
+
+.main_big3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main_big3>img {
+    width: 300px;
+    margin: 30px;
 }
 
 .main_1right-2 {
@@ -250,18 +266,48 @@ header>input[type=button] {
     height: 50%;
 }
 
-.main_big3 {
+.arrowBtn {
+    position: absolute;
+    font-size: 3rem;
+    background-color: #97979700;
+    z-index: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#arrowBtn-left {
+    left: 100px;
+}
+
+#arrowBtn-right {
+    right: 100px;
+}
+
+.img-count-container {
+    position: absolute;
     display: flex;
     flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 요소 너비의 50% 왼쪽으로 이동(가로방향 중앙위치) */
+    bottom: 100px;
+}
+
+.img-count {
+    width: 12px;
+    height: 20px;
+    background-color: rgb(149, 156, 255);
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.next-page-arrow {
+    display: flex;
     justify-content: center;
-
+    align-items: center;
+    font-size: 3rem;
+    margin: 50px 0;
 }
-
-.main_big3>img {
-    width: 300px;
-    margin: 30px;
-}
-
 
 
 
@@ -280,17 +326,17 @@ footer img {
 }
 
 footer {
-    height: 400px;
+    height: 35vh;
     display: flex;
     background-color: black;
     color: white;
     justify-content: center;
+    font-size: 0.6rem;
 }
 
-footer>div {
-
+footer>.footer-container {
     display: flex;
-    margin: 50px;
+    padding: 30px 150px;
     overflow: auto;
 }
 
@@ -300,38 +346,34 @@ footer fieldset {
 
 footer fieldset>section {
     opacity: 0.5;
-    line-height: 35px;
+    line-height: 20px;
 }
 
-footer fieldset>:nth-child(1)>span {
+footer .field-1 span {
     /* font-size: 1vw; */
     font-weight: bold;
 }
 
-footer fieldset>:nth-child(5) {
-    line-height: 50px;
-}
-
-footer>div>fieldset:nth-child(1) {
+footer .field-1 {
     flex-basis: 45%;
 }
 
-footer>div>fieldset:nth-child(2) {
+footer .field-2 {
     flex-basis: 5%;
 }
 
-footer>div>fieldset:nth-child(3) {
+footer .field-3 {
     flex-basis: 20%;
 }
 
-footer>div>fieldset:nth-child(4) {
+footer .field-4 {
     flex-basis: 5%;
 }
 
-footer>div>fieldset:nth-child(5) {
+footer .field-5 {
     flex-basis: 20%;
 }
 
-footer>div>fieldset:nth-child(6) {
+footer .field-6 {
     flex-basis: 5%;
 }
